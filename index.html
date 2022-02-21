@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+<p id="description">This is a survey for the FCC "Build a Survey Form" project</p>
+
+<form id="survey-form">
+  <!-- Input name -->
+  <div class="form-control">
+    <label for="name" id="name-label">Name</label>
+
+    <input type="field" id="name" placeholder="Enter your name" required />
+  </div>
+
+  <!-- Input email -->
+  <div class="form-control">
+    <label for="email" id="email-label">Email</label>
+
+    <input type="email" id="email" placeholder="Enter your email" required />
+  </div>
+
+  <!-- Input number -->
+  <div class="form-control">
+    <label for="number" id="number-label">Age</label>
+
+    <input type="number" id="number" placeholder="Enter your age" min="1" max="130" required />
+  </div>
+
+  <!-- Dropdown -->
+  <div class="form-control">
+    <label for="role" id="dopdown-label">Which option best describes you?</label>
+
+    <select name="role" id="dropdown">
+      <option value="student">Student</option>
+      <option value="intern">Intern</option>
+      <option value="professional">Professional</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+  <!-- Input Type Radio Button -->
+  <div class="form-control">
+    <label>What console do you like the most?</label>
+
+    <label for="recommed-1">
+      <input type="radio" id="recommed-1" name="console" value="Switch">Switch</input>
+    </label>
+    <label for="recommed-2">
+      <input type="radio" id="recommed-2" name="console" value="Xbox Series X">Xbox Series X</input>
+    </label>
+    <label for="recommed-3">
+      <input type="radio" id="recommed-3" name="console" value="PS5">PS5</input>
+    </label>
+  </div>
+
+  <div class="form-control">
+    <label>Languages and Frameworks known
+      <small>(Check all that apply)</small>
+    </label>
+    <!-- Input Type Checkbox -->
+    <label for="inp-1">
+      <input type="checkbox" name="languages_Frameworks" value="C">C</input></label>
+    <label for="inp-2">
+      <input type="checkbox" name="languages_Frameworks" value="C++">C++</input></label>
+    <label for="inp-3">
+      <input type="checkbox" name="languages_Frameworks" value="C#">C#</input></label>
+    <label for="inp-4">
+      <input type="checkbox" name="languages_Frameworks" value="Java">Java</input></label>
+    <label for="inp-5">
+      <input type="checkbox" name="languages_Frameworks" value="Python">Python</input></label>
+    <label for="inp-6">
+      <input type="checkbox" name="languages_Frameworks" value="JavaScrypt">JavaScript</input></label>
+    <label for="inp-7">
+      <input type="checkbox" name="languages_Frameworks" value="React">React</input></label>
+    <label for="inp-7">
+      <input type="checkbox" name="languages_Frameworks" value="Angular">Angular</input></label>
+    <label for="inp-7">
+      <input type="checkbox" name="languages_Frameworks" value="Django">Django</input></label>
+    <label for="inp-7">
+      <input type="checkbox" name="languages_Frameworks" value="Spring">Spring</input></label>
+  </div>
+
+  <!-- multi-line text input control -->
+  <div class="form-control">
+    <label for="comment">
+      Any comments or suggestions
+    </label>
+    <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+  </div>
+
+  <!-- Multi-line Text Input Control -->
+  <button type="submit" id="submit" value="submit">
+    Submit
+  </button>
+</form>
+</body>
+</html>
